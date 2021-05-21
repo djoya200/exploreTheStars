@@ -23,6 +23,10 @@ function Nav() {
                         <li>NASA Image And Video Library</li>
                     </Link>
 
+                    <Link to="marsRoverPhotos">
+                    <li>Mars Rover Photos</li>
+                    </Link>
+
                 </ul>
             </nav>
         </div>

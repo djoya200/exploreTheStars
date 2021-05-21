@@ -5,6 +5,10 @@ class About extends Component {
         return (
             <div>
                 <h1>A Little information about this site:</h1>
+
+                <text>Add a pretty qoute with a nice image behind it</text>
+
+                <text>Add a paraghraph about why you love the stars and made this</text>
             </div>
         );
     }

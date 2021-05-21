@@ -6,6 +6,7 @@ import AstronomyPicOfTheDay from './components/AstronomyPicOfTheDay';
 import About from './components/About';
 import Nav from './components/Nav'
 import NASAImgAndVideo from './components/NASAImgAndVideo';
+import MarsRoverPhotos from './components/MarsRoverPhotos';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/astronomyPickOfTheDay" component={AstronomyPicOfTheDay} />
           <Route path="/nasaImgAndVideo" component={NASAImgAndVideo} />
+          <Route path="/marsRoverPhotos" component={MarsRoverPhotos} />
         </Switch>
 
       </div>

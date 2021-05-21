@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ParagraphCard from './ParagraphCard';
 
 class NASAImgAndVideo extends Component {
     constructor() {
@@ -70,6 +71,9 @@ class NASAImgAndVideo extends Component {
                     <button type="submit" className="button">Search</button>
                 </form>
 
+<div>
+    <text> Moon ⭐️  Stars ⭐️  Moon Landing ⭐️  Sun ⭐️  Mercury ⭐️  Venus ⭐️  Earth ⭐️  Mars ⭐️  Jupiter ⭐️  Saturn ⭐️  Uranus ⭐️  Neptune ⭐️  Pluto ⭐️  Sun ⭐️  Meteor </text>
+</div>
                 <div className="bigContainerForCards">
                     {/* We added all these nested terinaries because some of the items in the arryay do not have 
                     images to display and a terniry to show the description or not 
@@ -93,7 +97,7 @@ class NASAImgAndVideo extends Component {
                                                     {this.state.seeMore
                                                         ?
                                                         this.state.seeMoreIndex === index
-                                                            ? <text>{itemInTheList.data[0].description}</text>
+                                                            ? <ParagraphCard description={itemInTheList.data[0].description} />
                                                             : null
                                                         : null}
                                                 </div>
