@@ -49,7 +49,7 @@ class MarsRoverPhotos extends Component {
                     <input type="text" name="input" className="input" placeholder='YYYY-MM-DD' onChange={this.handleChange} />
                     <button type="submit" className="button">Search</button>
                 </form>
-                <text>From 2013 to Now!</text>
+                <text className="textStyleForAllPages">From 2013 to Now!</text>
                 <div className="bigMarsCardContainer">
                     {this.state.dataFromMarsApiSearch.map((itemInTheMarsArray, index) => 
             //   console.log(itemInTheMarsArray)

@@ -64,7 +64,7 @@ class NASAImgAndVideo extends Component {
         return (
             <div>
                 <h1>Welcome To NASA's Image and Video Library</h1>
-                <h3>Search For Images and Videos</h3>
+                <h3 className="textStyleForAllPages">Search For Images and Videos</h3>
                 <form action=" " className="form" onSubmit={this.searchImagesAndVideos}>
                     <label htmlFor="query" className='label'>What do you want to learn about</label>
                     <input type="text" name="input" className="input" onChange={this.handleChange} />
@@ -89,11 +89,11 @@ class NASAImgAndVideo extends Component {
                                         ?
                                         <div className='cardDiv' key={index}>
                                             <img className='cardImg' src={itemInTheList.links[0].href} alt="" />
-                                            <text> {index} {itemInTheList.data[0].title} </text>
+                                            <text> {itemInTheList.data[0].title} </text>
                                             {itemInTheList.data[0].title == itemInTheList.data[0].description
                                                 ? null
                                                 : <div>
-                                                    <button onClick={() => { this.makeDescriptionChange(index) }}>{this.state.seeMore ? this.state.seeMoreIndex === index ? 'Show Less' : 'Show More' : 'Show More'}</button>
+                                                    <button className='seeMore' onClick={() => { this.makeDescriptionChange(index) }}>{this.state.seeMore ? this.state.seeMoreIndex === index ? 'Show Less' : 'Show More' : 'Show More'}</button>
                                                     {this.state.seeMore
                                                         ?
                                                         this.state.seeMoreIndex === index

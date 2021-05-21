@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "react-router-dom": "^5.2.0"
-  }
+  }, "scripts": {
+    "start": "cd explore_the_stars && npm start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "cd explore_the_stars && npm start"
+  },
 }

@@ -7,11 +7,13 @@ import About from './components/About';
 import Nav from './components/Nav'
 import NASAImgAndVideo from './components/NASAImgAndVideo';
 import MarsRoverPhotos from './components/MarsRoverPhotos';
+import Title from './components/Title';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Title />
         <Nav/>
 
         <Switch>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class AstronomyPicOfTheDay extends Component {
     constructor() {
         super()
@@ -39,13 +40,17 @@ class AstronomyPicOfTheDay extends Component {
             <div>
                 <h1>Astronomy Picture of the Day!</h1>
                 <div className="bigPageContiner">
-                    <text>Title: {this.state.title}</text>
-                    <text>Date: {this.state.date}</text>
+
+                    {/* explore_the_stars/src/images/tri.png */}
+                    <text className="textStyleForAllPages">Title: {this.state.title}</text>
+                    <text className="textStyleForAllPages">Date: {this.state.date}</text>
                     <div className="picContainer">
                         <img className="astronomyPicture" src={this.state.picture} alt="" />
                     </div>
                     <div className='astronomyPicContainer'>
-                        <text>About This Photo:{this.state.explanation}</text>
+
+
+                        <text className="textStyleForAllPages">About This Photo:{this.state.explanation}</text>
                     </div>
                 </div>
             </div>
