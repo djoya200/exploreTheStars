@@ -4,7 +4,7 @@ class ParagraphCard extends Component {
     render() {
         return (
             <div>
-                <text className='paragraphText'>{this.props.description}</text>
+                <p className='paragraphText'>{this.props.description}</p>
             </div>
         );
     }

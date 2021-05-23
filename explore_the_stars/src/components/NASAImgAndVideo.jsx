@@ -72,7 +72,7 @@ class NASAImgAndVideo extends Component {
                 </form>
 
 <div>
-    <text> Moon ⭐️  Stars ⭐️  Moon Landing ⭐️  Sun ⭐️  Mercury ⭐️  Venus ⭐️  Earth ⭐️  Mars ⭐️  Jupiter ⭐️  Saturn ⭐️  Uranus ⭐️  Neptune ⭐️  Pluto ⭐️  Sun ⭐️  Meteor </text>
+    <p> Moon ⭐️  Stars ⭐️  Moon Landing ⭐️  Sun ⭐️  Mercury ⭐️  Venus ⭐️  Earth ⭐️  Mars ⭐️  Jupiter ⭐️  Saturn ⭐️  Uranus ⭐️  Neptune ⭐️  Pluto ⭐️  Sun ⭐️  Meteor </p>
 </div>
                 <div className="bigContainerForCards">
                     {/* We added all these nested terinaries because some of the items in the arryay do not have 
@@ -89,7 +89,7 @@ class NASAImgAndVideo extends Component {
                                         ?
                                         <div className='cardDiv' key={index}>
                                             <img className='cardImg' src={itemInTheList.links[0].href} alt="" />
-                                            <text> {itemInTheList.data[0].title} </text>
+                                            <p> {itemInTheList.data[0].title} </p>
                                             {itemInTheList.data[0].title == itemInTheList.data[0].description
                                                 ? null
                                                 : <div>
