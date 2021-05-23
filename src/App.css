@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+/* ---------- Title ---------- */
+.mainPageHeading{
+  font-size: 50pt;
+  font-family: fantasy;
+  font-weight: bold;
+}
+.titleImageSmall{
+  height: 50px;
+  width: 50px;
+}
+.titleImageLarge{
+  height: 100px;
+  width: 100px;
+}
+.titleContainer{
+  margin-top: 25px;
+  /* background-color: #301934; */
+}
+/* ---------Nav bar----------- */
+.navStyle{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #155e89;
+}
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+
+}
+li{
+  list-style: none;
+  color: orange;
+  font-weight: bold;
+}
+/* ---------Astronomy pic of the day page */
+.bigPageContiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.astronomyPicContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  width: 75%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.picContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.astronomyPicture{
+  resize: contain;
+  overflow: hidden;
+}
+/* ---------NASA img and video page ---------- */
+.bigContainerForCards{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cardDiv{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 3px solid #155e89;
+  border-radius: 15%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  overflow: scroll;
+}
+.cardImg{
+  width: 100%;
+  object-fit: cover;
+}
+.seeMore{
+  background-color: #011307;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.paragraphText{
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* -----------text for all the pages ------------- */
+.textStyleForAllPages{
+  font-size: 14pt;
+}
